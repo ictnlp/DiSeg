@@ -2,20 +2,21 @@
 
 Source code for our ACL 2023 paper "[End-to-End Simultaneous Speech Translation with Differentiable Segmentation](https://aclanthology.org/2023.findings-acl.485.pdf)"
 
-![DiSeg](/Users/zhangshaolei/Documents/计算所/研究/seg ST/DiSeg.png)
+![DiSeg](./DiSeg.png)
 
-- [Installation](#Installation)
-- [Quick Start](#Quick-Start)
-  - [Data Pre-processing](#Data-Pre-processing)
+## Overview
+- [Installation](#installation)
+- [Quick Start](#quick-start)
+  - [Data Pre-processing](#data-pre-processing)
   - [Training](#Training)
-    - [0. (optional) Pre-training on MT Data](#0.-(optional)-Pre-training-on-MT-Data)
-    - [1. Training DiSeg](#1.-Training-DiSeg)
-  - [Inference](#Inference)
-    - [1. Offline Speech Translation with DiSeg](#1.-Offline-Speech-Translation-with-DiSeg)
-    - [2. Simultaneous Speech Translation with DiSeg](2.-Simultaneous-Speech-Translation-with-DiSeg)
-    - [3. Segment Speech with DiSeg](3.-Segment-Speech-with-DiSeg)
-- [Results](#Results)
-- [Citation](#Citation)
+    - [0. (optional) Pre-training on MT Data](#0-optional-pre-training-on-mt-data)
+    - [1. Training DiSeg](#1-training-diseg)
+  - [Inference](#inference)
+    - [1. Offline Speech Translation with DiSeg](#1-offline-speech-translation-with-diseg)
+    - [2. Simultaneous Speech Translation with DiSeg](2-simultaneous-speech-translation-with-diseg)
+    - [3. Segment Speech with DiSeg](3-segment-speech-with-diseg)
+- [Results](#results)
+- [Citation](#citation)
 
 ## Installation
 
