@@ -324,7 +324,7 @@ python fairseq_cli/generate.py ${MUSTC_ROOT}/en-${LANG} --tgt-lang ${LANG} \
 
 Perform **simultaneous speech translation** with  [SimulEval](https://github.com/facebookresearch/SimulEval), following [`shell_scripts/test.simuleval.sh`](shell_scripts/test.simuleval.sh)
 
-- Install [SimulEval](https://github.com/facebookresearch/SimulEval):
+- Install [SimulEval@2db1a59](https://github.com/facebookresearch/SimulEval/tree/2db1a590af11c28f6a3f67779568c4589b922cf1):
 
 ```bash
 cd SimulEval
