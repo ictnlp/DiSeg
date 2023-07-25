@@ -9,7 +9,7 @@ W2V_MODEL=path_to_wav2vec_model
 mean=0
 var=3
 
-# (optional) pre-train a mt encoder/decoder and load the pre-trained model with --load-pretrained-mt-encoder-decoder-from ${PATH_TO_PRETRAINED_MODEL}
+# (optional) pre-train a mt encoder/decoder and load the pre-trained model with --load-pretrained-mt-encoder-decoder-from ${PRETRAIN_DIR}/mt_pretrain_model.pt
 python train.py ${MUSTC_ROOT}/en-${LANG}  --tgt-lang ${LANG} --ddp-backend=legacy_ddp \
   --config-yaml config_raw.yaml \
   --train-subset train_raw \
