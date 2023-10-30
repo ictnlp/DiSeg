@@ -388,6 +388,29 @@ class WaitSegMultiheadAttention(nn.Module):
         cur_seg_num = torch.cumsum(seg_prob.round(), dim=-1)
         return cur_seg_num > idx
 
+    def build_waitk_mask(self, attn_weights, training_lagging_seg):
+        bsz, tgt_len, src_len = attn_weights.size()
+        idx = (
+            torch.arange(
+                training_lagging_seg - 1,
+                training_lagging_seg - 1 + tgt_len,
+                device=attn_weights.device,
+            )
+            .clamp(1, src_len)
+            .unsqueeze(0)
+            .unsqueeze(2)
+            .repeat(bsz, 1, 1)
+        )
+
+        tmp = (
+            torch.arange(0, src_len, device=attn_weights.device)
+            .unsqueeze(0)
+            .unsqueeze(1)
+            .repeat(bsz, 1, 1)
+        )
+
+        return tmp > idx
+
     @staticmethod
     def _append_prev_key_padding_mask(
         key_padding_mask: Optional[Tensor],
