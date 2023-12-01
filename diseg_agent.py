@@ -21,7 +21,6 @@ try:
     from simuleval.states import ListEntry, SpeechStates
 except ImportError:
     print("Please install simuleval 'pip install simuleval'")
-from examples.simultaneous_translation.models.convtransformer_simul_trans import *
 
 SHIFT_SIZE = 1
 WINDOW_SIZE = 1
