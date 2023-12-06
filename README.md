@@ -1,7 +1,7 @@
 # End-to-End Simultaneous Speech Translation with Differentiable Segmentation
 
 Source code for our ACL 2023 paper "[End-to-End Simultaneous Speech Translation with Differentiable Segmentation](https://aclanthology.org/2023.findings-acl.485.pdf)"
-> [Shaolei Zhang](https://zhangshaolei1998.github.io/), Yang Feng
+**[Shaolei Zhang](https://zhangshaolei1998.github.io/), Yang Feng**
 
 ![DiSeg](./DiSeg.png)
 
