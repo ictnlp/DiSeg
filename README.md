@@ -3,7 +3,7 @@
 > **[Shaolei Zhang](https://zhangshaolei1998.github.io/), Yang Feng**
 
 
-Source code for our ACL 2023 paper "[End-to-End Simultaneous Speech Translation with Differentiable Segmentation](https://aclanthology.org/2023.findings-acl.485.pdf)"
+Source code for our ACL 2023 paper "[End-to-End Simultaneous Speech Translation with Differentiable Segmentation](https://aclanthology.org/2023.findings-acl.485.pdf)". **Differentiable Segmentation (DiSeg)** is a technique that adaptively segments speech into word-level segments. DiSeg learns to segment from the underlying model in an unsupervised manner.
 
 
 ![DiSeg](./DiSeg.png)
