@@ -179,6 +179,8 @@ Download pre-trained [Wav2Vec2.0](dl.fbaipublicfiles.com/fairseq/wav2vec/wav2vec
 - Segment speech inputs: `--seg-speech`
 - Apply token-level contrastive learning: `--add-speech-seg-text-ctr`
 
+*PS: We find that training an offline ST model (w/o `--seg-speech`) and then using `--seg-speech` to fineturn a DiSeg model can achieve better results.*
+
 ```bash
 export CUDA_VISIBLE_DEVICES=0,1,2,3,4,5,6,7
 
